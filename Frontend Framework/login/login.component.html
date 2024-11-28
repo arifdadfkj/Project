@@ -1,0 +1,8 @@
+<div>
+    {{ message  }}
+</div>
+<form [formGroup]="person" (ngSubmit)="onSubmit()" *ngIf="!formSubmissionStatus">
+    Username : <input type="text" formControlName="username"><br> 
+    Password : <input type="password" formControlName="password"><br> 
+    <button type="submit" [disabled]="!person.valid">Submit</button> 
+</form>
