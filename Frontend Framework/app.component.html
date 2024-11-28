@@ -1,0 +1,6 @@
+<a routerLink="signup" *ngIf="!isLoggedIn()">SignUp</a> &nbsp;&nbsp;
+<a routerLink="login" *ngIf="!isLoggedIn()">Login</a> &nbsp;&nbsp;
+<a routerLink="forgotten-ps" *ngIf="!isLoggedIn()">Forgotten Password</a> &nbsp;&nbsp;
+<a routerLink="change-ps" *ngIf="isLoggedIn()">Change Password</a> &nbsp;&nbsp;
+<a routerLink="logout" *ngIf="isLoggedIn()">Logout</a> &nbsp;&nbsp;
+<router-outlet></router-outlet>
